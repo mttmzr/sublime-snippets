@@ -1,0 +1,22 @@
+<!-- Inspired by Adam Wathan (https://adamwathan.me/2017/01/16/optimizing-your-phpunit-workflow-in-sublime-text/) -->
+<snippet>
+    <content><![CDATA[
+<?php
+
+namespace Tests\\${TM_FILEPATH/(?:.*tests\/)|(\/)?([^\/]+)(?=\/)|(?:\/[^\/]+\.php$)/(?1:\\$^N:$^N)/g};
+
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
+class ${TM_FILENAME/(\w+)\.php/\1/} extends TestCase
+{
+    ${0}
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>testcase</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
