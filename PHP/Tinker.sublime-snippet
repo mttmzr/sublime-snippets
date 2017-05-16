@@ -1,3 +1,4 @@
+<!-- See https://blog.tighten.co/supercharge-your-laravel-tinker-workflow -->
 <snippet>
     <content><![CDATA[
 eval(\Psy\sh());
