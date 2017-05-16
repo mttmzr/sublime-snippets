@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+if (!function_exists('${1:functionName}')) {
+    function ${1:functionName}(${2})
+    {
+        ${0}
+    }
+}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ufun</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+</snippet>
